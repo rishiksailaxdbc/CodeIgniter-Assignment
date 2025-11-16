@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `crud_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `crud_db`;
+
+CREATE TABLE `items` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
+  `description` TEXT,
+  `price` DECIMAL(10,2),
+  `createdAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+);
