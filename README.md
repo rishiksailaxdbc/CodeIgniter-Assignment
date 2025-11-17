@@ -28,7 +28,7 @@ This repo contains two separate projects, **AuthMicroservice** and **CRUDService
 
 ---
 
-## 🛠️ Tech Stack:
+## Tech Stack:
 
 * **Framework**: CodeIgniter 3
 * **Server/Database**: XAMPP (Apache - PHP Compatible Server, MySQL database)
@@ -197,13 +197,27 @@ All CRUDService API requests require the `Authorization` header.
 ---
 
 ## Screenshots
-![SignUp](</Media/SignUp.png>)
-![SignIn](</Media/SignIn.png>)
-![Create a item](</Media/CreateItem.png>)
-![Get all items](</Media/GetAllItems.png>)
-![Get one item](</Media/GetOneItem.png>)
-![Update item](</Media/UpdateItem.png>)
-![Delete item](</Media/DeleteItem.png>)
+
+* **SignUp**
+    ![SignUp](</Media/SignUp.png>)
+
+* **SignIn**
+    ![SignIn](</Media/SignIn.png>)
+
+* **Creating an Item**
+    ![Create a item](</Media/CreateItem.png>)
+
+* **Get all Items**
+    ![Get all items](</Media/GetAllItems.png>)
+
+* **Get one Item**
+    ![Get one item](</Media/GetOneItem.png>)
+
+* **Update Item**
+    ![Update item](</Media/UpdateItem.png>)
+
+* **Delete Item**
+    ![Delete item](</Media/DeleteItem.png>)
 
 
 ## Important Code Pages:
@@ -229,8 +243,3 @@ All CRUDService API requests require the `Authorization` header.
 * **[Item_model.php](/CRUDService/application/models/Item_model.php)** (Database interaction for items)
 * **[database.php](/CRUDService/application/config/database.php)** (Database connection settings)
 * **[.htaccess](https://github.com/rishiksailaxdbc/CodeIgniter-Assignment/blob/main/CRUDService/.htaccess)** (URL rewriting)
-
-
-## 📄 Important Code Pages:
-
----
