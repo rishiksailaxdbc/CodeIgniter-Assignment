@@ -210,20 +210,27 @@ All CRUDService API requests require the `Authorization` header.
 
 ### **AuthMicroService**
 
-* `[SignIn.php](/AuthMicroservice/application/controllers/SignIn.php)` (Controller for user sign in)
-* `[SignUp.php](/AuthMicroservice/application/controllers/SignUp.php)` (Controller for user sign up)
-* `[config.php](/AuthMicroservice/application/config/config.php)` (General CodeIgniter configuration)
-* `[autoload.php](/AuthMicroservice/application/config/autoload.php)` (Autoloading libraries/helpers)
-* `[User_model.php](/AuthMicroservice/application/models/User_model.php)` (Database interaction for users)
-* `[database.php](/AuthMicroservice/application/config/database.php)` (Database connection settings)
-* `[.htaccess](https://github.com/rishiksailaxdbc/CodeIgniter-Assignment/blob/main/AuthMicroservice/.htaccess)` (URL rewriting)
+* **[SignIn.php](/AuthMicroservice/application/controllers/SignIn.php)** (Controller for user sign in)
+* **[SignUp.php](/AuthMicroservice/application/controllers/SignUp.php)** (Controller for user sign up)
+* **[config.php](/AuthMicroservice/application/config/config.php)** (General CodeIgniter configuration)
+* **[autoload.php](/AuthMicroservice/application/config/autoload.php)** (Autoloading libraries/helpers)
+* **[User_model.php](/AuthMicroservice/application/models/User_model.php)** (Database interaction for users)
+* **[database.php](/AuthMicroservice/application/config/database.php)** (Database connection settings)
+* **[.htaccess](https://github.com/rishiksailaxdbc/CodeIgniter-Assignment/blob/main/AuthMicroservice/.htaccess)** (URL rewriting)
 
 ### **CRUDService**
 
-* `[Authorization_Token.php](/CRUDService/application/libraries/Authorization_Token.php)` (Library/Helper for token validation/authorization logic)
-* `[Items.php](/CRUDService/application/controllers/Items.php)` (Controller for CRUD operations on items)
-* `[config.php](/CRUDService/application/config/config.php)` (General CodeIgniter configuration)
-* `[autoload.php](/CRUDService/application/config/autoload.php)` (Autoloading libraries/helpers)
-* `[Item_model.php](/CRUDService/application/models/Item_model.php)` (Database interaction for items)
-* `[database.php](/CRUDService/application/config/database.php)` (Database connection settings)
-* `[.htaccess](https://github.com/rishiksailaxdbc/CodeIgniter-Assignment/blob/main/CRUDService/.htaccess)` (URL rewriting)
+### **CRUDService**
+
+* **[Authorization_Token.php](/CRUDService/application/libraries/Authorization_Token.php)** (Library/Helper for token validation/authorization logic)
+* **[Items.php](/CRUDService/application/controllers/Items.php)** (Controller for CRUD operations on items)
+* **[config.php](/CRUDService/application/config/config.php)** (General CodeIgniter configuration)
+* **[autoload.php](/CRUDService/application/config/autoload.php)** (Autoloading libraries/helpers)
+* **[Item_model.php](/CRUDService/application/models/Item_model.php)** (Database interaction for items)
+* **[database.php](/CRUDService/application/config/database.php)** (Database connection settings)
+* **[.htaccess](https://github.com/rishiksailaxdbc/CodeIgniter-Assignment/blob/main/CRUDService/.htaccess)** (URL rewriting)
+
+
+## 📄 Important Code Pages:
+
+---
