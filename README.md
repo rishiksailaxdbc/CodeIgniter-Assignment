@@ -224,8 +224,8 @@ All CRUDService API requests require the `Authorization` header.
 
 ### **AuthMicroService**
 
-* **[SignIn.php](/AuthMicroservice/application/controllers/SignIn.php)** (Controller for user sign in)
 * **[SignUp.php](/AuthMicroservice/application/controllers/SignUp.php)** (Controller for user sign up)
+* **[SignIn.php](/AuthMicroservice/application/controllers/SignIn.php)** (Controller for user sign in)
 * **[config.php](/AuthMicroservice/application/config/config.php)** (General CodeIgniter configuration)
 * **[autoload.php](/AuthMicroservice/application/config/autoload.php)** (Autoloading libraries/helpers)
 * **[User_model.php](/AuthMicroservice/application/models/User_model.php)** (Database interaction for users)
