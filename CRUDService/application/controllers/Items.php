@@ -45,33 +45,68 @@ class Items extends CI_Controller {
         echo json_encode(['status' => true, 'data' => $item]);
     }
 
-    // function to insert/create a new item POST/items
     public function create() {
-        $this->auth();
+    $this->auth(); 
+    $input = json_decode(file_get_contents('php://input'), true);
 
-        $input = json_decode(file_get_contents('php://input'), true);
-
-        $data = [
-            'name' => $input['name'],
-            'description' => $input['description'],
-            'price' => $input['price']
-        ];
-
-        $this->Item_model->insert($data);
-
-        echo json_encode(['status' => true, 'message' => 'Item created successfully']);
+    if (
+        !isset($input['name']) ||
+        !isset($input['description']) ||
+        !isset($input['price'])
+    ) {
+        echo json_encode([
+            'status' => false,
+            'message' => 'Required: name, description, and price'
+        ]);
+        return;
     }
+
+    $data = [
+        'name'        => $input['name'],
+        'description' => $input['description'],
+        'price'       => $input['price']
+    ];
+
+    $this->Item_model->insert($data);
+
+    echo json_encode([
+        'status' => true,
+        'message' => 'Item created successfully'
+    ]);
+    }
+
 
     // function to update a item using it's id PUT/items/{id}
     public function update($id) {
-        $this->auth();
+    $this->auth(); 
+    $input = json_decode(file_get_contents('php://input'), true);
 
-        $input = json_decode(file_get_contents('php://input'), true);
-
-        $this->Item_model->update_item($id, $input);
-
-        echo json_encode(['status' => true, 'message' => 'Item updated']);
+    if (
+        !isset($input['name']) ||
+        !isset($input['description']) ||
+        !isset($input['price'])
+    ) {
+        echo json_encode([
+            'status' => false,
+            'message' => 'Required: name, description, and price'
+        ]);
+        return;
     }
+
+    $data = [
+        'name'        => $input['name'],
+        'description' => $input['description'],
+        'price'       => $input['price']
+    ];
+
+    $this->Item_model->update_item($id, $data);
+
+    echo json_encode([
+        'status' => true,
+        'message' => 'Item updated successfully'
+    ]);
+    }
+
 
     // function to delete a item using it's id DELETE/items/{id}
     public function delete($id) {
